@@ -19,7 +19,7 @@ def gutenbergTextToList( rawtext ):
     line = line.strip(" :")   # helps catching of titles in text, which use space inconsistently
     if line == "THE SONNETS": # Don't start reading until after the boilerplate frontmatter 
       works_texts = []  
-    if line == "FINIS": # Stop reading before the blilerplate endmatter
+    if line == "*** END OF THE PROJECT GUTENBERG EBOOK THE COMPLETE WORKS OF WILLIAM SHAKESPEARE ***": # Stop reading before the boilerplate endmatter
       break
     # now lets start putting text we find into the list
     # Break text into a list. From each word remove internal and outside punctuation
